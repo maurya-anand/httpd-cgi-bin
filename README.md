@@ -1,6 +1,6 @@
 # httpd-cgi-bin
 
-This is a template project for CGI web applications. It uses a MySQL-based backend and an Apache2-based frontend.
+This is a template for a containerized CGI web application. It uses Docker to containerize the application, Apache2 for serving the web pages and CGI scripts, and MySQL as the backend database.
 
 ## Project Structure
 
