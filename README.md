@@ -15,7 +15,7 @@ This is a template for a containerized CGI web application. It uses Docker to co
 2. Set up the environment variables in the `.env` file (located at the root of the project).
 3. Run `docker-compose up` to start the application.
 
-> The server will be available on http://localhost:80/.
+> The server will be available on [http://localhost:80/](http://localhost:80/).
 
 ## Services
 
