@@ -41,9 +41,9 @@ Create a folder structure in the following template:
 ```bash
 .
 ├── compose.yml
+├── .env
 ├── mysql_db_files
 │   └── insert_data.sql
-├── notes-comments.txt
 ├── README.md
 └── web
     ├── cgi-bin
