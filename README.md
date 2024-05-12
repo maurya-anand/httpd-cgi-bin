@@ -34,6 +34,8 @@ The `compose.yml` file defines the services, volumes, and environment variables 
 
 The Apache2 server configuration is located in the `web/httpd.conf` file.
 
+The database related environment variables are configured through `PassEnv` directive.
+
 ## Using this Structure for Future Projects
 
 Create a folder structure in the following template:
