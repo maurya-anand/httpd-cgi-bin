@@ -6,6 +6,11 @@ services:
       - ./web/cgi-bin:/usr/local/apache2/cgi-bin
     ports:
       - 80:80
+    environment:
+      MYSQL_DATABASE: ${MYSQL_DATABASE}
+      MYSQL_USER: ${MYSQL_USER}
+      MYSQL_PASSWORD: ${MYSQL_PASSWORD}
+      MYSQL_HOST: backend
     depends_on:
       - backend
   backend:
