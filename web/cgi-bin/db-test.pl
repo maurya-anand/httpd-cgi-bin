@@ -6,22 +6,16 @@ print header;
 print start_html('Test MySQL Connection');
 
 my $driver   = "mysql";
-my $database = "container_db";
-my $hostname = "backend";
+my $database = $ENV{"MYSQL_DATABASE"};
+my $hostname = $ENV{"MYSQL_HOST"};
+
+my $userid   = $ENV{"MYSQL_USER"};
+my $password = $ENV{"MYSQL_PASSWORD"};
 
 my $dsn = "DBI:$driver:database=$database;host=$hostname";
 
-my $userid = "docker_user";
-my $password = "docker_password";
-
 my $dbh = DBI->connect($dsn, $userid, $password, { RaiseError => 1 })
             or die "Failed to connect to database: $DBI::errstr";
-
-print p("Driver: $driver");
-print p("Database: $database");
-print p("DSN: $dsn");
-print p("User ID: $userid");
-print p("Password: $password");
 
 print h2("Successfully connected to the database.");
 
